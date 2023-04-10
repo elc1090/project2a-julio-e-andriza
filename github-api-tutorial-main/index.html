@@ -17,9 +17,27 @@
 <h3 class="text-center mt-5">GitHub API</h3>
 <form id="gitHubForm" class="form-inline mx-auto" style="width: 300px">
     <input id="usernameInput" class="form-control mb-5" type="text" name="username" placeholder="GitHub Username">
+    <input id="repoInput" class="form-control mb-5" type="text" name="repo" placeholder="GitHub Repository">
     <input type="submit" class="btn btn-primary ml-2 mb-5" value="Submit">
 </form>
-<ul id="userRepos" class="list-group mx-auto mb-5" style="width: 500px"></ul>
+<div id="alertContainer" class="hidden">
+    
+</div>
+<table class="table table-dark">
+    <thead>
+        <tr>
+            <th scope="col">Data</th>
+            <th scope="col">Author</th>
+            <th scope="col">Message</th>
+            <th scope="col">URL</th>
+        </tr>
+    </thead>
+
+    <tbody id="commitData">
+        
+    </tbody>
+</table>
+
 <script src="app.js"></script>
 </body>
 
